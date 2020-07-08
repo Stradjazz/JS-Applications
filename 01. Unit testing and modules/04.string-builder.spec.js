@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+
 const StringBuilder = require('./04.string-builder');
 const expect = require('chai').expect;
 const assert = require('chai').assert;
@@ -14,7 +14,7 @@ describe('class StringBuilder', function () {
             let myObject = new StringBuilder('hello');
             expect(myObject).to.have.property('_stringArray').with.lengthOf(5);
         });
-        // eslint-disable-next-line no-undef
+       
         it('should test with empty value', function () {
             let myObject = new StringBuilder();
             expect(myObject).to.have.property('_stringArray').with.lengthOf(0);
